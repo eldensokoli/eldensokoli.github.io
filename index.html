@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elden Sokoli</title>
+  <meta name="description" content="Elden Sokoli: Cloud Solution Engineer and DevOps Engineer in Hamburg. Azure, Bicep, GitHub Actions, governance as code.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f8fa; --card: #ffffff; --text: #1f2328; --muted: #59636e;
+      --border: #d1d9e0; --accent: #1a7f37; --accent-soft: #dafbe1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --card: #151b23; --text: #e6edf3; --muted: #9198a1;
+              --border: #3d444d; --accent: #3fb950; --accent-soft: #12261e; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 16px/1.6 Inter, system-ui, sans-serif; }
+    main { max-width: 920px; margin: 0 auto; padding: 56px 16px 80px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+    header { margin-bottom: 48px; }
+    .prompt { color: var(--accent); font-size: 14px; }
+    h1 { font-size: clamp(36px, 7vw, 56px); font-weight: 800; margin: 8px 0 4px; letter-spacing: -0.02em; }
+    .role { font-size: 18px; color: var(--muted); min-height: 1.6em; }
+    .cursor { display: inline-block; width: 9px; background: var(--accent); animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .btn { border: 1px solid var(--border); background: var(--card); color: var(--text);
+           padding: 8px 14px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+    .btn:hover { border-color: var(--accent); text-decoration: none; }
+
+    h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+         margin: 48px 0 16px; font-family: "JetBrains Mono", monospace; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+
+    .certs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cert { border: 1px solid var(--border); background: var(--card); border-radius: 8px; padding: 8px 12px; font-size: 14px; }
+    .cert b { font-family: "JetBrains Mono", monospace; color: var(--accent); margin-right: 6px; }
+
+    .stack { color: var(--muted); }
+    footer { margin-top: 64px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="prompt mono">~/hamburg $ whoami</div>
+    <h1>Elden Sokoli</h1>
+    <div class="role mono"><span id="role">Cloud Solution Engineer</span><span class="cursor">&nbsp;</span></div>
+    <div class="links">
+      <a class="btn" href="https://github.com/eldensokoli">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/elden-sokoli/">LinkedIn</a>
+    </div>
+  </header>
+
+  <h2>// Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="https://eldensokoli.github.io/github-governance/">GitHub Governance as Code</a></h3>
+      <p>GitHub governance as code: an automation catalogue and a scan dashboard, shown on a synthetic enterprise. Comes with a macOS companion app.</p>
+      <div class="tags"><span class="tag">GitHub Enterprise</span><span class="tag">Actions</span><span class="tag">SwiftUI</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://lively-moss-0b3167903.3.azurestaticapps.net">Hafn Game</a></h3>
+      <p>A Hamburg-themed platformer made in Godot 4, with an Office Rush level and an online leaderboard. It runs in the browser on Azure Static Web Apps, so you can click and play.</p>
+      <div class="tags"><span class="tag">Godot</span><span class="tag">Azure SWA</span><span class="tag">Azure Functions</span></div>
+    </div>
+    <div class="card">
+      <h3>Exam Prep apps</h3>
+      <p>SwiftUI iPhone quiz apps for AZ-400, GH-200, GH-500 and GH-900, with hundreds of questions and interactive drag-and-drop items.</p>
+      <div class="tags"><span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">iOS</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://github.com/eldensokoli/gh500-practice">GH-500 Practice</a></h3>
+      <p>A hands-on practice repo for the GitHub Advanced Security (GH-500) exam.</p>
+      <div class="tags"><span class="tag">GHAS</span><span class="tag">Python</span><span class="tag">JavaScript</span></div>
+    </div>
+  </div>
+
+  <h2>// Certifications</h2>
+  <div class="certs">
+    <span class="cert"><b>AZ-900</b>Azure Fundamentals</span>
+    <span class="cert"><b>AZ-104</b>Azure Administrator</span>
+    <span class="cert"><b>AZ-400</b>DevOps Engineer Expert</span>
+    <span class="cert"><b>GH-900</b>GitHub Foundations</span>
+    <span class="cert"><b>GH-200</b>GitHub Actions</span>
+    <span class="cert"><b>GH-500</b>GitHub Advanced Security</span>
+    <span class="cert"><b>PL-900</b>Power Platform Fundamentals</span>
+  </div>
+
+  <h2>// Stack</h2>
+  <p class="stack mono">Azure · Bicep · GitHub Actions · Azure DevOps · Docker · PowerShell · Bash · Python · Java · Swift · Godot · Linux</p>
+
+  <footer class="mono">© <span id="y"></span> Elden Sokoli · hosted on GitHub Pages</footer>
+</main>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const roles = ['Cloud Solution Engineer', 'DevOps Engineer', 'CI/CD Workflows', 'Azure + Bicep'];
+  const el = document.getElementById('role');
+  let i = 0;
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(() => { i = (i + 1) % roles.length; el.textContent = roles[i]; }, 2500);
+  }
+</script>
+</body>
+</html>
